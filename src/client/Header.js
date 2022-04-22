@@ -5,7 +5,7 @@ import "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown, Dropdown, Button, SplitButton } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "./login/UserAuthContext";
 import { Container } from "react-bootstrap";
 
@@ -30,10 +30,10 @@ const Header = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
-                <Nav.Link href="/tools">Features</Nav.Link>
-                <Nav.Link href="/purchase">Pricing</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/test">TEST</Nav.Link>
+                <Link to="/tools">Features</Link>
+                <Link to="/purchase">Pricing</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/test">TEST</Link>
                 {user && user ? (
                   <NavDropdown
                     title="Account"
@@ -41,7 +41,7 @@ const Header = () => {
                     align={{ lg: "start", md: "start" }}
                     style={{ marginRight: "3rem" }}
                   >
-                    <NavDropdown.Item href="#action/3.1">
+                    <NavDropdown.Item to="#action/3.1">
                       <div>
                         {user && user.email}
                         <br />
@@ -60,9 +60,10 @@ const Header = () => {
 
                 {user && user ? null : (
                   <>
-                    <Nav.Link href="/login">Sign-in</Nav.Link>
-                    <Nav.Link href="/signup">Sign-up</Nav.Link>
+                    <Link to="/login">Sign-in</Link>
+                    <Link to="/signup">Sign-up</Link>
                   </>
+                  
                 )}
               </Nav>
             </Navbar.Collapse>
