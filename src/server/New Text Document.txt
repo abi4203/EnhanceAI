@@ -1,0 +1,8 @@
+const params = {
+    param1: value1,
+    param2: value2; 
+};
+
+const response = get( url, params );
+// or
+const response = post( url, params );
