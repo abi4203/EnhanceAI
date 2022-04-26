@@ -7,14 +7,11 @@ const Home = () => {
       <body>
         <Container>
           <Row>
-            <Col style={{ marginTop: "5rem" }}>
+            <Col style={{ margintop: "5rem" }}>
               <Card
-                style={{ width: "18rem", height: "16.1rem", color: "#0070c9" }}
+                style={{ width: "18rem", height: "16.1rem", color: "#0070c9",  background: "linear-gradient(#fff,#e3e3e3)",
+                borderRadius: "15px" }}
                 className="border border-3"
-                style={{
-                  background: "linear-gradient(#fff,#e3e3e3)",
-                  borderRadius: "15px",
-                }}
               >
                 <div>
                   <Card.Body style={{ height: "13.9rem" }}>
@@ -26,7 +23,7 @@ const Home = () => {
                       and get it
                     </Card.Text>
                     <div style={{ height: "20px" }}></div>
-                    <Button variant="primary" To="/RE">
+                    <Button variant="primary" to="/RE">
                       Start working
                     </Button>
                   </Card.Body>
@@ -71,7 +68,7 @@ const Home = () => {
                   <Card.Text>
                     Swap languages or frameworks for code like React to Vue
                   </Card.Text>
-                  <Link To="/Ec">
+                  <Link to="/Ec">
                     <div style={{ height: "20px" }}></div>
                     <Button variant="primary">Start working</Button>
                   </Link>
@@ -97,7 +94,7 @@ const Home = () => {
                     provided
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Link To="/Cc">
+                  <Link to="/Cc">
                     <Button variant="light">Start working</Button>
                   </Link>
                 </Card.Body>
@@ -121,7 +118,7 @@ const Home = () => {
                     Trying to solve a debug,try the bug solving code
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Link To="/Clean">
+                  <Link to="/Clean">
                     <Button variant="light">Start working</Button>
                   </Link>
                 </Card.Body>
