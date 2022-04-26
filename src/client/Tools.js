@@ -26,7 +26,7 @@ const Home = () => {
                       and get it
                     </Card.Text>
                     <div style={{ height: "20px" }}></div>
-                    <Button variant="primary" href="/RE">
+                    <Button variant="primary" To="/RE">
                       Start working
                     </Button>
                   </Card.Body>
@@ -52,9 +52,9 @@ const Home = () => {
                     Write a better code which is clean and simple
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Card.Link href="/fix">
+                  <Link to="/fix">
                     <Button variant="light">Start working</Button>
-                  </Card.Link>
+                  </Link>
                 </Card.Body>
               </div>
               {/* </Card> */}
@@ -62,22 +62,19 @@ const Home = () => {
 
             <Col style={{ marginTop: "5rem" }}>
               <Card
-                style={{ width: "18rem", height: "16.1rem", color: "#0070c9" }}
+                style={{ width: "18rem", height: "16.1rem", color: "#0070c9",background: "linear-gradient(#fff,#e3e3e3)",
+                borderRadius: "15px"}}
                 className="border border-3"
-                style={{
-                  background: "linear-gradient(#fff,#e3e3e3)",
-                  borderRadius: "15px",
-                }}
               >
                 <Card.Body style={{ height: "13.9rem" }}>
                   <Card.Title className="fw-bold">Code Convertor </Card.Title>
                   <Card.Text>
                     Swap languages or frameworks for code like React to Vue
                   </Card.Text>
-                  <Card.Link href="/Ec">
+                  <Link To="/Ec">
                     <div style={{ height: "20px" }}></div>
                     <Button variant="primary">Start working</Button>
-                  </Card.Link>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -100,9 +97,9 @@ const Home = () => {
                     provided
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Card.Link href="/Cc">
+                  <Link To="/Cc">
                     <Button variant="light">Start working</Button>
-                  </Card.Link>
+                  </Link>
                 </Card.Body>
               </div>
               {/* </Card> */}
@@ -124,9 +121,9 @@ const Home = () => {
                     Trying to solve a debug,try the bug solving code
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Card.Link href="/Clean">
+                  <Link To="/Clean">
                     <Button variant="light">Start working</Button>
-                  </Card.Link>
+                  </Link>
                 </Card.Body>
               </div>
             </Col>
