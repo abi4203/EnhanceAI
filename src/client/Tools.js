@@ -1,6 +1,6 @@
 import React from "react";
-import { Container,Link, Row, Col, Button, Card } from "react-bootstrap";
-
+import { Container, Row, Nav, Col, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -9,8 +9,13 @@ const Home = () => {
           <Row>
             <Col style={{ margintop: "5rem" }}>
               <Card
-                style={{ width: "18rem", height: "16.1rem", color: "#0070c9",  background: "linear-gradient(#fff,#e3e3e3)",
-                borderRadius: "15px" }}
+                style={{
+                  width: "18rem",
+                  height: "16.1rem",
+                  color: "#0070c9",
+                  background: "linear-gradient(#fff,#e3e3e3)",
+                  borderRadius: "15px",
+                }}
                 className="border border-3"
               >
                 <div>
@@ -49,9 +54,11 @@ const Home = () => {
                     Write a better code which is clean and simple
                   </Card.Text>
                   <div style={{ height: "20px" }}></div>
-                  <Link to="/fix">
-                    <Button variant="light">Start working</Button>
-                  </Link>
+                  <Nav>
+                    <Link to="/fix">
+                      <Button variant="light">Start working</Button>
+                    </Link>
+                  </Nav>
                 </Card.Body>
               </div>
               {/* </Card> */}
@@ -59,8 +66,13 @@ const Home = () => {
 
             <Col style={{ marginTop: "5rem" }}>
               <Card
-                style={{ width: "18rem", height: "16.1rem", color: "#0070c9",background: "linear-gradient(#fff,#e3e3e3)",
-                borderRadius: "15px"}}
+                style={{
+                  width: "18rem",
+                  height: "16.1rem",
+                  color: "#0070c9",
+                  background: "linear-gradient(#fff,#e3e3e3)",
+                  borderRadius: "15px",
+                }}
                 className="border border-3"
               >
                 <Card.Body style={{ height: "13.9rem" }}>
@@ -68,10 +80,12 @@ const Home = () => {
                   <Card.Text>
                     Swap languages or frameworks for code like React to Vue
                   </Card.Text>
-                  <Link to="/Ec">
-                    <div style={{ height: "20px" }}></div>
-                    <Button variant="primary">Start working</Button>
-                  </Link>
+                  <Nav>
+                    <Link to="/Ec">
+                      <div style={{ height: "20px" }}></div>
+                      <Button variant="primary">Start working</Button>
+                    </Link>
+                  </Nav>
                 </Card.Body>
               </Card>
             </Col>
